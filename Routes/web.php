@@ -12,5 +12,6 @@
 */
 
 Route::prefix('portfolio')->group(function() {
-    Route::get('/', 'PortfolioController@index');
+    Route::get('/', 'PortfolioController@index')->name('main.portfolio');
 });
+
